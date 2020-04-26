@@ -32,7 +32,7 @@ let invalidBookingID = 9999;
 let invalidToken = 'ujnaxn876ajj';
 let invalidDataTest = '';
 
-describe(`Mekari Test using Restful Booker`, () => {
+describe(`Automation API using Mocha and Chai`, () => {
     before('token', async () => {
         const response = await generateToken.postToken(dataToken);
         assert(response.status).to.equal(code.successOk);
