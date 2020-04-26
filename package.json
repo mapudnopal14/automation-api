@@ -1,0 +1,26 @@
+{
+  "name": "automation-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-windows": "node ./node_modules/mocha/bin/mocha ./api/test  --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 180000",
+    "reports": "open 'reports/mochawesome/mochawesome.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapudnopal14/automation-api.git"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/mapudnopal14/automation-api#readme",
+  "author": "NFL14",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^7.0.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mysql": "^2.17.1",
+    "supertest": "^3.1.0"
+  }
+}
